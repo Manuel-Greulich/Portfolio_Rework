@@ -1,0 +1,548 @@
+.introduction {
+    position: relative;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    width: 100vw;
+    overflow-x: clip;
+    max-width: 100%;
+    padding-top: 100px;
+}
+
+.shadow-blue {
+    position: absolute;
+    left: -340px;
+    top: 100px;
+    z-index: -1;
+
+    img {
+        height: 800px;
+    }
+}
+
+.shadow-green {
+    position: absolute;
+    right: -500px;
+    top: 80px;
+    z-index: -1;
+
+    img {
+        height: 800px;
+    }
+}
+
+.iam-name-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    
+}
+
+.iAm {
+    rotate: -90deg;
+    font-size: 65px !important;
+    margin-right: -22px;
+
+    @media(max-width: 400px){
+        display: none;
+    }
+
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.name {
+    font-size: 105px !important;
+    font-weight: 700 !important;
+    height: 105px;
+
+
+}
+
+.frontend-developer {
+    font-size: 75px !important;
+    color: #4B47FF;
+}
+
+.button {
+    a {
+        text-decoration: none;
+        
+    }
+
+    button {
+        font-size: 20px;
+        margin-top: 40px;
+        height: 50px;
+        width: 150px;
+        font-weight: 400;
+        border-radius: 10px;
+        text-decoration: none;
+        &:hover {
+            
+            transform: scale(1.2) ;
+        }
+    }
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+}
+
+.icons-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icons {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+
+    img {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    a {
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.blue-line {
+    height: 3px; 
+    width: 80px; 
+    position: absolute; 
+    left: -10px;
+}
+
+@media(max-width: 1200px){
+    .shadow-blue {
+        img {
+            height: 700px;
+        }
+    }
+
+    .shadow-green {
+        img {
+            height: 750px;
+        }
+    }
+
+    .iAm {
+        font-size: 48px !important;
+        margin-right: -20px;
+    }
+
+    .name {
+        font-size: 95px !important;
+        height: 95px;
+    }
+
+    .frontend-developer {
+        font-size: 55px !important;
+    }
+
+    .button {
+        button {
+            font-size: 18px;
+            margin-top: 35px;
+            height: 45px;
+            width: 140px;
+            border-radius: 10px;
+        }
+    }
+
+    .scroll-down {
+        img {
+            height: 120px;
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .shadow-blue {
+        left: -260px;
+        img {
+            height: 600px;
+        }
+    }
+
+    .shadow-green {
+        right: -440px;
+        img {
+            height: 700px;
+        }
+    }
+
+    .iAm {
+        font-size: 44px !important;
+        margin-right: -20px;
+    }
+
+    .name {
+        font-size: 90px !important;
+        height: 87px;
+    }
+
+    .frontend-developer {
+        font-size: 50px !important;
+    }
+
+    .button {
+        button {
+            font-size: 16px;
+            margin-top: 30px;
+            height: 43px;
+            width: 130px;
+            border-radius: 10px;
+        }
+    }
+
+    .scroll-down {
+        right: 50px;
+        img {
+            height: 120px;
+        }
+    }
+
+}
+@media(max-width: 850px){
+    .shadow-blue {
+        left: -240px;
+        img {
+            height: 450px;
+        }
+    }
+
+    .shadow-green {
+        right: -400px;
+        img {
+            height: 550px;
+        }
+    }
+
+    .iAm {
+        font-size: 44px !important;
+        margin-right: -18px;
+    }
+
+    .name {
+        font-size: 85px !important;
+    }
+
+    .frontend-developer {
+        font-size: 47px !important;
+    }
+
+    .button {
+        button {
+            font-size: 16px;
+            margin-top: 30px;
+            height: 43px;
+            width: 130px;
+            border-radius: 10px;
+        }
+    }
+
+    .scroll-down {
+        right: 50px;
+        img {
+            height: 120px;
+        }
+    }
+}
+
+@media(max-width: 750px){
+    .shadow-blue {
+        left: -240px;
+        img {
+            height: 430px;
+        }
+    }
+
+    .shadow-green {
+        right: -400px;
+        img {
+            height: 520px;
+        }
+    }
+
+    .iAm {
+        font-size: 37px !important;
+        margin-right: -18px;
+    }
+
+    .name {
+        font-size: 75px !important;
+        height: 73px;
+    }
+
+    .frontend-developer {
+        font-size: 42px !important;
+    }
+
+    .button {
+        button {
+            font-size: 16px;
+            margin-top: 30px;
+            height: 40px;
+            width: 120px;
+            border-radius: 8px;
+        }
+    }
+
+    .scroll-down {
+        right: 50px;
+        img {
+            height: 110px;
+        }
+    }
+    
+}
+
+@media(max-width: 650px){
+    .shadow-blue {
+        left: -240px;
+        img {
+            height: 430px;
+        }
+    }
+
+    .shadow-green {
+        right: -400px;
+        img {
+            height: 520px;
+        }
+    }
+
+    .iAm {
+        font-size: 30px !important;
+        margin-right: -18px;
+    }
+
+    .name {
+        font-size: 65px !important;
+        height: 63px;
+    }
+
+    .frontend-developer {
+        font-size: 34px !important;
+    }
+
+    .button {
+        button {
+            font-size: 14px;
+            margin-top: 30px;
+            height: 37px;
+            width: 110px;
+            border-radius: 8px;
+        }
+    }
+
+    .scroll-down {
+        right: 50px;
+        img {
+            height: 110px;
+        }
+    }
+}
+
+@media(max-width: 550px){
+    .shadow-blue {
+        left: -240px;
+        img {
+            height: 430px;
+        }
+    }
+
+    .shadow-green {
+        right: -400px;
+        img {
+            height: 520px;
+        }
+    }
+
+    .iAm {
+        font-size: 28px !important;
+        margin-right: -16px;
+    }
+
+    .name {
+        font-size: 55px !important;
+        height: 54px;
+    }
+
+    .frontend-developer {
+        font-size: 30px !important;
+    }
+
+    .button {
+        button {
+            font-size: 14px;
+            margin-top: 30px;
+            height: 37px;
+            width: 110px;
+            border-radius: 8px;
+        }
+    }
+
+    .scroll-down {
+        right: 20px;
+        img {
+            height: 110px;
+        }
+    }
+
+    .icons {
+        width: 100%;
+        justify-content: center;
+        padding-left: 0;
+        img {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+@media(max-width: 450px){
+    .iAm {
+        font-size: 16px !important;
+        margin-right: -12px;
+    }
+
+    .name {
+        font-size: 45px !important;
+        height: 45px;
+    }
+
+    .frontend-developer {
+        font-size: 20px !important;
+    }
+
+    .button {
+        button {
+            font-size: 12px;
+            height: 32px;
+            width: 100px;
+        }
+    }
+
+    .scroll-down {
+        right: 20px;
+        img {
+            height: 110px;
+        }
+    }
+
+    .icons {
+        width: 100%;
+        justify-content: center;
+        padding-left: 0;
+        img {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+@media(max-width: 450px){
+    .iAm {
+        font-size: 22px !important;
+        margin-right: -12px;
+    }
+
+    .name {
+        font-size: 45px !important;
+        height: 45px;
+    }
+
+    .frontend-developer {
+        font-size: 26px !important;
+    }
+
+    .button {
+        button {
+            font-size: 12px;
+            height: 32px;
+            width: 100px;
+        }
+    }
+
+    .icons {
+        width: 100%;
+        justify-content: center;
+        padding-left: 0;
+        img {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .blue-line {
+        width: 50px;
+    }
+}
+
+@media(max-width: 350px){
+    .iAm {
+        font-size: 17px !important;
+        margin-right: -5px;
+    }
+
+    .name {
+        font-size: 36px !important;
+    }
+
+    .name-container {
+        margin: 0;
+    }
+
+    .frontend-developer {
+        font-size: 16px !important;
+    }
+
+    .button {
+        button {
+            font-size: 12px;
+            height: 32px;
+            width: 100px;
+        }
+    }
+
+    .icons {
+        width: 100%;
+        justify-content: center;
+        padding-left: 0;
+        img {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .blue-line {
+        width: 50px;
+    }
+}
+

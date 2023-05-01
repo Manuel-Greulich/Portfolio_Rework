@@ -1,0 +1,148 @@
+<div class="portfolio">
+  <div class="heading">
+    <div class="line-heading">
+      <img src="/../assets/img/line_blue_small.png" />
+      <h2>Portfolio</h2>
+    </div>
+
+    <div class="description">
+      <p>
+        This page is a sample of my work! Scroll down to view other projects I
+        have developed.
+      </p>
+    </div>
+  </div>
+
+  <div class="projects" data-aos="fade-right" data-aos-duration="1000">
+    <div
+      (mouseenter)="changeElPolloLoco = true"
+      (mouseleave)="changeElPolloLoco = false"
+      class="portfolio-img"
+    >
+      <img src="/../assets/img/El_Pollo_Loco_Laptop.png" />
+      <div *ngIf="changeElPolloLoco" class="hover-project">
+        <div class="hover-buttons">
+          <a
+            href="https://github.com/Manuel-Greulich/El-Pollo-Loco"
+            target="_blank"
+            ><button mat-button color="primary">Github</button></a
+          >
+          <a
+            href="https://manuel-greulich.github.io/El-Pollo-Loco/"
+            target="_blank"
+            ><button mat-button color="primary">Live Test</button></a
+          >
+        </div>
+
+        <div class="hover-description">
+          <div class="hover-text">
+            <h4>El Pollo Loco</h4>
+            <span
+              >Jump, run and throw game based on object-oriented approach. Help
+              Pepe to find coins and tabasco salsa to fight against the crazy
+              hen</span
+            >
+            <span style="color: #00bee8">JavaScript | HTML | CSS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div
+      (mouseenter)="changeJoin = true"
+      (mouseleave)="changeJoin = false"
+      class="portfolio-img"
+    >
+      <img src="/../assets/img/logo_join.png" />
+      <div *ngIf="changeJoin" class="hover-project">
+        <div class="hover-buttons">
+          <a
+            href="https://github.com/Manuel-Greulich/JOIN-Kanban"
+            target="_blank"
+            ><button mat-button color="primary">Github</button></a
+          >
+          <a href="##############" target="_blank"
+            ><button mat-button color="primary">Live Test</button></a
+          >
+        </div>
+
+        <div class="hover-description">
+          <div class="hover-text">
+            <h4>Join</h4>
+            <span
+              >Task manager inspired by the Kanban System. Create and organize
+              tasks using drag and drop functions, assign users and
+              categories.</span
+            >
+            <span style="color: #00bee8">JavaScript | HTML | CSS</span>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div
+      (mouseenter)="changeBitcoin = true"
+      (mouseleave)="changeBitcoin = false"
+      class="portfolio-img"
+    >
+      <img src="/../assets/img/bitcoin.png" />
+      <div *ngIf="changeBitcoin" class="hover-project">
+        <div class="hover-buttons">
+          <a
+            href="https://github.com/Manuel-Greulich/Cryptocurrency-App"
+            target="_blank"
+            ><button mat-button color="primary">Github</button></a
+          >
+          <a
+            href="https://manuel-greulich.developerakademie.net/Cryptocurency%20App/index.html"
+            target="_blank"
+            ><button mat-button color="primary">Live Test</button></a
+          >
+        </div>
+
+        <div class="hover-description">
+          <div class="hover-text">
+            <h4>Cryptocurrency-App</h4>
+            <span
+              >This Bitcoin app shows the exchange rate between BTC and USD and
+              shows current Price Data and Price History</span
+            >
+            <span style="color: #00bee8">JavaScript | HTML | CSS | API</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      (mouseenter)="changeRingOfFire = true"
+      (mouseleave)="changeRingOfFire = false"
+      class="portfolio-img"
+    >
+      <img src="/../assets/img/ringoffire.png" />
+      <div *ngIf="changeRingOfFire" class="hover-project">
+        <div class="hover-buttons">
+          <a
+            href="https://github.com/Manuel-Greulich/RingOfFire"
+            target="_blank"
+            ><button mat-button color="primary">Github</button></a
+          >
+          <a href="https://ringoffire-4cc84.web.app/" target="_blank"
+            ><button mat-button color="primary">Live Test</button></a
+          >
+        </div>
+
+        <div class="hover-description">
+          <div class="hover-text">
+            <h4>Ring of Fire</h4>
+            <span
+              >A classic famous Multiplayer game, well known as "Kings
+              Cup"</span
+            >
+            <span style="color: #00bee8">Angular | HTML | CSS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blue-shadow">
+    <img src="/../assets/img/light_blue_shadow.png" />
+  </div>
+</div>

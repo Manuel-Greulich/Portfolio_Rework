@@ -1,0 +1,279 @@
+.skills-container {
+    background-color: rgba(20, 29, 47, 0.8) !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: hidden;
+    max-width: 100%;
+    padding-top: 10vh;
+}
+
+.skill-icons {
+    width: 40vw;
+    padding-left: 100px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+
+    img {
+        height: 110px;
+        margin-right: 60px
+    }
+
+    ;
+}
+
+
+
+.skill-description {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+
+}
+
+.headline-skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.padding-right {
+    padding-right: 100px;
+}
+
+.green-line {
+    padding-left: 50px;
+}
+
+
+.button {
+    a {
+        text-decoration: none;
+    }
+    button {
+        font-size: 18px;
+        margin-top: 40px;
+        height: 45px;
+        width: 180px;
+        font-weight: 400;
+        border-radius: 10px;
+
+        &:hover {
+            transform: scale(1.2) ;
+        }
+    }
+}
+
+@media(max-width: 1400px) {
+    .row {
+        img {
+            height: 100px;
+            margin-right: 40px;
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .row {
+        img {
+            height: 80px;
+            margin-right: 40px;
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+
+    .skill-icons {
+        padding-left: 50px;
+    }
+
+    .row {
+        img {
+            height: 70px;
+            margin-right: 40px;
+        }
+    }
+
+    .padding-right {
+        padding-right: 50px;
+    }
+
+    .button {
+        button {
+            font-size: 16px;
+            margin-top: 30px;
+            height: 43px;
+            width: 140px;
+            border-radius: 10px;
+        }
+    }
+
+}
+
+@media(max-width: 850px) {
+
+    .padding-right {
+        padding-right: 50px;
+    }
+}
+
+@media(max-width: 750px) {
+    .skill-icons {
+        padding-left: 50px;
+    }
+
+    .row {
+        margin-bottom: 40px;
+        img {
+            height: 60px;
+            margin-right: 30px;
+        }
+    }
+
+    .button {
+        button {
+            font-size: 16px;
+            margin-top: 30px;
+            height: 40px;
+            width: 140px;
+            border-radius: 8px;
+        }
+    }
+}
+
+@media(max-width: 650px) {
+
+    .skill-icons {
+        padding-left: 50px;
+    }
+
+    .row {
+        margin-bottom: 30px;
+        img {
+            height: 50px;
+            margin-right: 20px;
+        }
+    }
+
+    .button {
+        button {
+            font-size: 14px;
+            margin-top: 30px;
+            height: 40px;
+            width: 130px;
+            border-radius: 8px;
+        }
+    }
+}
+
+@media(max-width: 550px) {
+    .skills-container {
+        height: unset;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .skill-icons {
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        img {
+            height: 70px;
+            margin-right: 20px;
+        }
+    }
+
+    .green-line {
+        position: absolute;
+        right: 0;
+        img {
+            width: 60vw;
+        }
+    }
+
+    .padding-right {
+        width: 100%;
+
+    }
+
+    .skill-description {
+        width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
+
+    .button {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        display: flex;
+        justify-content: center;
+        button {
+            font-size: 12px;
+            margin-top: 30px;
+            height: 30px;
+            width: 110px;
+            border-radius: 8px;
+        }
+    }
+}
+
+@media(max-width: 450px) {
+
+    .skill-icons {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .row {
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        img {
+            height: 60px;
+            margin-right: 10px;
+        }
+    }
+
+    .green-line {
+        img {
+            width: 50vw;
+        }
+    }
+
+    .skill-description {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
+
+    .button {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        display: flex;
+        justify-content: center;
+        button {
+            font-size: 12px;
+            margin-top: 30px;
+            height: 30px;
+            width: 110px;
+            border-radius: 8px;
+        }
+    }
+}

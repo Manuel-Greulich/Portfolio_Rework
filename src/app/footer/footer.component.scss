@@ -1,0 +1,110 @@
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    max-width: 100%;
+}
+
+.footer {
+    min-height: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-top: 2px solid #00BEE8;
+}
+
+.name-impressum {
+    display: flex;
+    flex-direction: row;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    h3 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        font-size: 35px;
+    }
+}
+
+.footer-icons {
+    img {
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 30px;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+
+
+}
+
+.impressum {
+    padding-left: 100px;
+    padding-right: 100px;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@media(max-width: 1000px) {
+    .footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .name-impressum {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .impressum {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media(max-width: 850px) {
+    
+}
+
+@media(max-width: 750px) {
+    .name-impressum {
+        h2 {
+            font-size: 25px;
+        }
+    }
+
+    .footer-icons {
+        img {
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 25px;
+        }
+    }
+}
+
+@media(max-width: 750px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .impressum {
+        display: flex;
+        justify-content: center;
+    }
+}
